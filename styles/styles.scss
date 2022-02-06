@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('./bootstrap/bootstrap-grid.css');
+@import './bootstrap/scss/functions';
+@import './bootstrap/scss/variables';
+@import './bootstrap/scss/mixins/breakpoints';
+@import './variables';
+@import './blocks/header';
+@import './blocks/mainTopBlock';
+@import './blocks/sectionAboutMe';
+@import './blocks/sectionSkills';
+@import './blocks/sectionPorfolio';
+@import './blocks/sectionContacts';
+@import './blocks/footer';
+
+body {
+    margin: 0;
+    padding: 0;
+    color: $color-main;
+    font-family:'Open Sans', Courier, monospace;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p, a {
+    font-size: 17px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+}
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: auto;
+}
+
+
+[hidden] {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100vh;
+    width: auto;
+}
+
+header {
+    flex: 0 0 auto;
+}
+
+main {
+    flex: 1 0 auto;
+    //width: auto !important;
+}
+
+footer {
+    flex: 0 0 auto;
+}
+
+
+
+
+
