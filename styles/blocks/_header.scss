@@ -1,0 +1,103 @@
+@import '../variables';
+
+.b-header {
+    position: relative;
+    display: flex;
+    &_position {
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__toggleBtn {
+        cursor: pointer;
+        &_padding {
+            padding-top: 30px;
+        }
+        &_right {
+            align-self: end;
+        }
+    }
+}
+
+.b-nav {
+    transition: all 0.5s ease-out;
+    &_positionForXS {
+        @include media-breakpoint-down(sm) {
+            position: absolute;
+            top: 0;
+            margin: 0;
+            padding-top: 30px;
+            right: -107vw;
+            background-color: #fff;
+            height: 100vh;
+            width: 101vw;
+            &[data-visible="visible-xs"] {
+                right: 0;
+            }
+        }
+    }
+    &__cancelMenuBtn {
+        width: 27px;
+        cursor: pointer; 
+        &_position {
+            right: 25px;
+            position: absolute;
+        }
+    }
+    &__list {
+        display: flex;
+        margin: 0;
+        &_position {
+            justify-content: space-between;
+            padding: 32px 0;
+            @include media-breakpoint-down(sm) {
+                display: flex !important;
+                flex-direction: column;
+                padding: 0 40px;
+                width: 291px;
+            }
+        }
+    }
+    &__item {
+        font-family: 'Roboto', Helvetica, sans-serif;
+        color: $color-light;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        cursor: pointer;
+        &_active {
+            font-weight: 700;
+            color: $color-main;
+        }
+        @include media-breakpoint-down(sm) {
+            padding-bottom: 68px;
+            font-size: 34px;
+            line-height: 42px;
+        }
+    }
+    &__language {
+        font-size: 34px;
+        line-height: 42px;
+        font-weight: 00;
+        color: $color-light;
+        &_position {
+            position: absolute;
+            transform: rotate(90deg);
+            bottom: 125px;
+            right: -40px;
+        }
+        &_active {
+            font-weight: 700;
+            color: $color-main;
+        }
+    }
+    &__hr {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+        &_border-1px {
+            outline: 1px solid $color-light;
+        }
+    }
+}
+

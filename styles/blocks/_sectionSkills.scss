@@ -1,0 +1,24 @@
+@import '../variables';
+
+.b-skills {
+    &_position {
+        @include media-breakpoint-down(sm) {
+            padding: 30px;
+        }
+    }
+    &__title {
+        text-align: center;
+        line-height: 42px;
+    }
+    &__text {
+        line-height: 22px;
+        &_position {
+            text-align: center;
+            margin: 10px;
+        }
+    }
+    &__item {
+        margin: 0 auto;
+        padding-bottom: 50px;
+     }
+}

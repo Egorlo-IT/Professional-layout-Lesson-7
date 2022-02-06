@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB template</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="b-header b-header_position container">
+                <img onclick="menuToggle()"
+                    class="b-header__toggleBtn b-header__toggleBtn_padding b-header__toggleBtn_right d-block d-sm-none"
+                    src="./image/svg/toggle-menu.svg" alt="toggle menu" width="50">
+                <nav class="b-nav b-nav_positionForXS" data-visible="visible">
+                    <img onclick="closeMenu()"
+                        class="b-nav__cancelMenuBtn b-nav__cancelMenuBtn_position d-block d-sm-none"
+                        src="./image/svg/cross.svg" alt="cross icon">
+                    <ul class="b-nav__list b-nav__list_position d-none d-sm-flex">
+                        <li onclick="closeMenu()" class="b-nav__item b-nav__item_active">Home</li>
+                        <li onclick="closeMenu()" class="b-nav__item">About me</li>
+                        <li onclick="closeMenu()" class="b-nav__item">Skills</li>
+                        <li onclick="closeMenu()" class="b-nav__item">Portfolio</li>
+                        <li onclick="closeMenu()" class="b-nav__item">Contacts</li>
+                        <li onclick="closeMenu()" class="b-nav__language b-nav__language_position d-block d-sm-none">
+                            <span>RU</span> | <span class="b-nav__language_active">ENG</span>
+                        </li>
+                    </ul>
+                    <hr class="b-nav__hr b-nav__hr_border-1px d-none d-sm-flex">
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="b-mainTopBlock b-mainTopBlock_position">
+                        <span class="b-mainTopBlock__item b-mainTopBlock__item_1 col-xs-12 col-md-4">
+                            Denis <br> Novik
+                        </span>
+                        <span class="b-mainTopBlock__item b-mainTopBlock__item_2 col-xs-12 col-md-4">
+                            UX | UI designer <br>
+                            24 years old, Minsk
+                        </span>
+                        <span class="b-mainTopBlock__item b-mainTopBlock__item_3 d-none d-sm-flex">
+                            RU | <span class="b-mainTopBlock__item_active">ENG</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5 container">
+                <img class="responsive" src="./image/png/picture-1.png" alt="photo man">
+            </div>
+
+            <section class="b-aboutMe b-aboutMe_position">
+                <h1 class="b-aboutMe__title">About me</h1>
+                <p class="b-aboutMe__text b-aboutMe__text_position">Hi, I'm Denis – UX/UI designer from Minsk.
+                    I'm interested in design and everything connected with it.
+                </p>
+                <p class="b-aboutMe__text b-aboutMe__text_position">
+                    I'm studying at courses "Web and mobile design
+                    interfaces" in IT-Academy.
+                </p>
+                <p class="b-aboutMe__text b-aboutMe__text_position">
+                    Ready to implement excellent projects
+                    with wonderful people.</p>
+            </section>
+
+            <section class="b-skills b-skills_position container">
+                <h1 class="b-skills__title">Skills</h1>
+                <p class="b-skills__text b-skills__text_position mb-5">I work in such programs as</p>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <img class="b-skills__item" src="./image/png/skill-1.png" alt="picture skill">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <img class="b-skills__item" src="./image/png/skill-2.png" alt="picture skill">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <img class="b-skills__item" src="./image/png/skill-3.png" alt="picture skill">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <img class="b-skills__item" src="./image/png/skill-4.png" alt="picture skill">
+                    </div>
+                </div>
+            </section>
+            <section class="b-portfolio">
+                <div class="container">
+                    <h1 class="b-portfolio__title b-portfolio__title_position">Portfolio</h1>
+                    <img class="b-portfolio__picture responsive" src="./image/png/picture-2.png" alt="porfolio picture">
+                    <a href="#" class="b-portfolio__link b-portfolio__link_position">Online fashion store - Homepage</a>
+                    <img class="b-portfolio__picture responsive" src="./image/png/picture-3.png" alt="porfolio picture">
+                    <a href="#" class="b-portfolio__link b-portfolio__link_position">Reebok Store - Concept</a>
+                    <img class="b-portfolio__picture responsive" src="./image/png/picture-4.png" alt="porfolio picture">
+                    <a href="#" class="b-portfolio__link b-portfolio__link_position">Braun Landing Page - Concept</a>
+                </div>
+            </section>
+            <section class="b-contacts b-contacts_position">
+                <h1 class="b-contacts__title b-contacts__title_position">Contacts</h1>
+                <p class="b-contacts__text b-contacts__text_position">Want to know more or just chat? <br> You are
+                    welcome!</p>
+                <button class="b-contacts__btn b-contacts__btn_borderRadius b-contacts__btn_position">Send
+                    message</button>
+                <div class="b-contacts__socialBlock b-contacts__socialBlock_position">
+                    <img src="./image/svg/soc-in.svg" alt="social icon LinkedIn">
+                    <img src="./image/svg/soc-inst.svg" alt="social icon Instagram">
+                    <img src="./image/svg/soc-be.svg" alt="social icon Behance">
+                    <img src="./image/svg/soc-ball.svg" alt="social icon Dribble">
+                </div>
+                <span class="b-contacts__description b-contacts__description_position">Like me on <br> LinkedIn,
+                    Instagram, Behance, Dribble</span>
+            </section>
+        </main>
+        <footer class="b-footer b-footer_position">
+            <span class="b-footer__description b-footer__description_position">The developed by
+                Korobeinikov&nbsp;E.A.</span>
+            <a class="b-footer__developerMail b-footer__developerMail_position"
+                href="mailto:egorlo059@gmail.com">egorlo059@gmail.com</a>
+        </footer>
+    </div>
+</body>
+
+</html>

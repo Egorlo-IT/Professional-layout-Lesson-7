@@ -1,0 +1,22 @@
+@import '../variables';
+
+.b-portfolio {
+    background-color: $color-bckg;
+    &__title {
+        line-height: 42px;
+        &_position {
+            text-align: center;
+            padding: 113px 0 47px;
+        }
+    }
+    &__link {
+        display: block;
+        line-height: 22px;
+        text-decoration-line: underline;
+        color: $color-main;
+        &_position {
+            text-align: center;
+            padding: 45px 0 100px;
+        }
+    }
+}

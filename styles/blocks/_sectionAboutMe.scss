@@ -1,0 +1,26 @@
+@import '../variables';
+
+.b-aboutMe {
+    background-color: $color-bckg;
+    &_position {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 120px;
+        margin: 104px auto;
+        @include media-breakpoint-down(sm) {
+            padding: 30px;
+        }
+    }
+    &__title {
+        line-height: 42px;
+    }
+    &__text {
+        line-height: 22px;
+        &_position {
+            text-align: center;
+            margin: 10px;
+        }
+    }
+
+}

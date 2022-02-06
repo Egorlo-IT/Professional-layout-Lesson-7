@@ -1,0 +1,56 @@
+@import '../variables';
+
+.b-mainTopBlock {
+    display: flex;
+    min-height: 125px;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+        position: unset;
+    }
+    &_position {
+        align-items: flex-end;
+    }
+    &__item {
+        display: flex;
+        color: $color-main;
+        @include media-breakpoint-down(sm) {
+            align-items: center;
+            justify-content: start !important;
+        }
+        &_1 {
+            font-size: 41px;
+            line-height: 50px;
+            font-weight: 700;
+            height: 95px;
+            @include media-breakpoint-down(sm) {
+                position: absolute;
+                top: 20px;
+                z-index: -1;
+                width: 200px;
+            }
+        }
+        &_2 {
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 500;
+            justify-content: center;
+            @include media-breakpoint-down(sm) {
+                padding-top: 23px;
+            }
+        }
+        &_3 {
+            position: absolute;
+            font-size: 16px;
+            line-height: 20px;
+            justify-content: end;
+            transform: rotate(90deg);
+            transform-origin: right;
+            right: 20px;
+            padding-right: 0;
+            margin-bottom: -8px;
+        }
+        &_active {
+            font-weight: 700;
+        }
+    }
+}

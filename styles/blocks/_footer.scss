@@ -1,0 +1,32 @@
+@import '../variables';
+
+.b-footer {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    display: flex;
+    background-color: $color-main;
+    color: white;
+    height: 45px;
+    font-size: 14px;
+    &_position {
+        padding: 25px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__description {
+        &_position {
+            text-align: center;
+        }
+    }
+    &__developerMail {
+        color: antiquewhite;
+        font-size: inherit;
+        transition-duration: 0.25s;
+        &:hover {
+            color: rgb(219, 96, 24);
+        }
+        &_position {
+           padding-top: 10px;     
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@import '../variables';
+
+.b-contacts {
+    display: flex;
+    &_position {
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        line-height: 42px;
+        margin: 0;
+        &_position {
+            text-align: center;
+            padding: 114px 0 20px;
+        }
+    }
+    &__text {
+        line-height: 22px;
+        margin: 0;
+        &_position {
+            text-align: center;
+        }
+    }
+    &__btn {
+        width: 166px;
+        height: 38px;
+        background-color: $color-main;
+        color: #fff;
+        &_borderRadius {
+            border-radius: 25px;
+        }
+        &_position {
+            margin: 29px 0 86px;
+        }
+    }
+    &__socialBlock {
+        display: flex;
+        width: 300px;
+        &_position {
+            flex-direction: row;
+            justify-content: space-between;
+            @include media-breakpoint-down(sm) {
+                justify-content: space-evenly;
+            }
+        }
+    }
+    &__description {
+        font-size: 14px;
+        line-height: 17px;
+        color: $color-light;
+        display: block;
+        &_position {
+            text-align: center;
+            padding: 45px 0 123px;
+        }
+
+    }
+}
